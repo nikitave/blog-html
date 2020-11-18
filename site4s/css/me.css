@@ -1,0 +1,168 @@
+body{
+    background-color: #222327;
+    margin: 0;
+    padding: 0;
+    color:#fff;
+    font-size:15px;
+    font-family: "Noto Sans";
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    margin: 0;
+}
+
+/*Title
+==============*/
+
+.title{
+    margin-top: 20px;
+}
+
+.title__title{
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+}
+
+/*Button
+================*/
+
+.but__link{
+    display: flex;
+    text-decoration: none;
+    margin-left: 45%;
+    margin-top: 30px;
+}
+
+.but__nexting{
+    width: 20px;
+    height: 20px;
+    fill:#717171;
+    transform: rotate(180deg);
+    transition: .3s;
+}
+.but__text{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+
+}
+
+.but__link:hover .but__nexting{
+    fill:#e7a007;
+}
+
+/*Info
+===============*/
+.info{
+    display: flex;
+    margin-top: 50px;
+}
+.info__left{
+    width: 50%;
+}
+.info__right{
+    width: 50%;
+    padding-right: 30px;
+}
+
+.info__name{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.info__text{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.info__photo{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    margin-left: 20%;
+}
+
+
+.info__social--text{
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.social__icon{
+    width: 40px;
+    margin-top: 20px;
+    height: 40px;
+    transition: .3s;
+}
+.social__icon:hover{
+    transform: translateY(-5px);
+}
+
+/*Media
+==================*/
+@media(max-width:823px){
+    .info__photo{
+        width: 300px;
+        height: 300px;
+        margin-left: 10%;
+    }
+}
+
+@media(max-width:667px){
+    .info__photo{
+        margin-left: 2%;
+    }
+    .info__name{
+        font-size: 25px;
+    }
+    .info__text{
+        font-size: 15px;
+    }
+    .info__social--text{
+        font-size: 20px;
+    }
+    .title__title{
+        font-size: 30px;
+    }
+    .but__link{
+        margin-left: 35%;
+    }
+}
+@media(max-width:568px){
+    .info__photo{
+        width: 200px;
+        height: 200px;
+        margin-left: 10%;
+    }
+}
+
+@media(max-width:414px){
+    .title__title{
+        font-size: 25px;
+    }
+    .but__link{
+        margin-left: 30%;
+    }
+    .info{
+        flex-wrap: wrap;
+    }
+
+    .info__left{
+        width: 100%;
+    }
+    .info__right{
+        width: 100%;
+        margin-left: 20px;
+    }
+    .info__photo{
+        margin-left: 20%;
+    }
+
+}
